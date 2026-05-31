@@ -30,7 +30,7 @@ language: zh
 
 ---
 
-## ⚡ 快速开始
+## 快速开始
 
 ```bash
 npx skills add <repo-url>
@@ -42,7 +42,7 @@ npx skills add <repo-url>
 
 ---
 
-## 🎯 能力矩阵
+## 能力矩阵
 
 | 能力 | 说明 | 输出特征 |
 |---|---|---|
@@ -56,7 +56,7 @@ npx skills add <repo-url>
 
 ---
 
-## 🧠 核心机制
+## 核心机制
 
 ### 7 步风格学习流程
 
@@ -110,7 +110,7 @@ npx skills add <repo-url>
 
 ---
 
-## 📁 文件结构
+## 文件结构
 
 ```
 ta-style-dialogue/
@@ -134,7 +134,7 @@ ta-style-dialogue/
 
 ---
 
-## 🔌 兼容性
+## 兼容性
 
 - Claude Code
 - GitHub Copilot
@@ -145,7 +145,7 @@ ta-style-dialogue/
 
 ---
 
-## 🔒 隐私说明
+## 隐私说明
 
 所有资料仅在当前对话的内存中处理，不会被持久化存储或用于模型训练。
 
@@ -159,13 +159,13 @@ ta-style-dialogue/
 
 ---
 
-## ⚠️ 免责声明
+## 免责声明
 
 本 Skill 生成风格化对话，用于个人陪伴、关系复盘、写作辅助和纪念留存。它没有意识、记忆或情感。不得用于冒充真人、欺骗第三方或骚扰他人。
 
 ---
 
-## 📄 许可证
+## 许可证
 
 MIT License — 自由使用，建议注明出处。
 

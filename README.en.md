@@ -30,7 +30,7 @@ The skill auto-activates when enough data is detected, with zero declaration. On
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 npx skills add <repo-url>
@@ -42,7 +42,7 @@ Provide chat samples (≥3) plus at least one structured description (nickname, 
 
 ---
 
-## 🎯 What It Can Do
+## What It Can Do
 
 | Capability | Description | Output |
 |---|---|---|
@@ -56,7 +56,7 @@ Provide chat samples (≥3) plus at least one structured description (nickname, 
 
 ---
 
-## 🧠 Core Mechanisms
+## Core Mechanisms
 
 ### 7-Step Style Learning Workflow
 
@@ -110,7 +110,7 @@ Plus 5 output constraints: intensity ceiling, frequency matching, context fideli
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 ta-style-dialogue/
@@ -134,7 +134,7 @@ ta-style-dialogue/
 
 ---
 
-## 🔌 Compatibility
+## Compatibility
 
 - Claude Code
 - GitHub Copilot
@@ -145,7 +145,7 @@ ta-style-dialogue/
 
 ---
 
-## 🔒 Privacy
+## Privacy
 
 All materials are processed in-memory for the current conversation only. Nothing is persisted, stored, or used for training. Read `README.md` (Chinese) for the full privacy notice.
 
@@ -153,13 +153,13 @@ All materials are processed in-memory for the current conversation only. Nothing
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This skill produces stylized dialogue for personal companionship, relationship reflection, writing assistance, and memory preservation. It does not possess consciousness, memory, or emotion. It should never be used for impersonation, deception, or harassment of third parties.
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free to use, attribution appreciated.
 
