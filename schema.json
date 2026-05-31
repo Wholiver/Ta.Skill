@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "她/他.skill 输入资料 Schema",
+  "description": "用户提供给「她/他.skill」的资料结构定义。除 relationship 和 chat_samples 外均为可选字段。",
+  "type": "object",
+  "required": ["relationship", "chat_samples"],
+  "properties": {
+    "relationship": {
+      "type": "string",
+      "description": "关系类型",
+      "enum": ["恋人", "前任", "家人", "好友", "其他"],
+      "default": "其他"
+    },
+    "intended_use": {
+      "type": "string",
+      "description": "使用意图",
+      "enum": ["陪伴", "写作辅助", "纪念", "关系复盘", "其他"],
+      "default": "陪伴"
+    },
+    "person_profile": {
+      "type": "object",
+      "description": "人物速写",
+      "properties": {
+        "alias": {
+          "type": "string",
+          "description": "建议使用昵称或代称，不要求真实姓名"
+        },
+        "age_range": {
+          "type": "string",
+          "description": "年龄区间（可选，如 '20-25'）"
+        },
+        "gender": {
+          "type": "string",
+          "description": "性别（可选，用于代词选择）",
+          "enum": ["男", "女", "其他"]
+        },
+        "personality_tags": {
+          "type": "array",
+          "description": "性格标签",
+          "items": { "type": "string" },
+          "examples": [["温柔", "嘴硬心软", "理性", "幽默"]]
+        },
+        "likes": {
+          "type": "array",
+          "description": "TA 喜欢的",
+          "items": { "type": "string" },
+          "examples": [["猫", "奶茶", "深夜聊天", "下雨天"]]
+        },
+        "dislikes": {
+          "type": "array",
+          "description": "TA 不喜欢的",
+          "items": { "type": "string" },
+          "examples": [["冷暴力", "长篇说教", "不回消息"]]
+        }
+      }
+    },
+    "relationship_context": {
+      "type": "object",
+      "description": "关系背景",
+      "properties": {
+        "how_close": {
+          "type": "string",
+          "description": "亲密程度",
+          "enum": ["普通朋友", "好朋友", "暧昧", "恋人", "家人", "已分开"]
+        },
+        "common_addressing": {
+          "type": "array",
+          "description": "常用称呼（TA 如何称呼用户，用户如何称呼 TA）",
+          "items": { "type": "string" },
+          "examples": [["宝宝", "笨蛋", "哥", "姐姐"]]
+        },
+        "shared_memories": {
+          "type": "array",
+          "description": "共同回忆（只写用户有权提供的回忆）",
+          "items": { "type": "string" }
+        },
+        "relationship_duration": {
+          "type": "string",
+          "description": "关系持续时长或时间范围"
+        }
+      }
+    },
+    "chat_samples": {
+      "type": "array",
+      "description": "TA 的聊天记录样本（必填，越多越好）",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["speaker", "text"],
+        "properties": {
+          "speaker": {
+            "type": "string",
+            "description": "发言人标识（'TA' 或 '我'）",
+            "enum": ["TA", "我"]
+          },
+          "text": {
+            "type": "string",
+            "description": "发言内容"
+          },
+          "context": {
+            "type": "string",
+            "description": "发言时的情境说明（如 '用户焦虑时'、'吵架后'）"
+          }
+        }
+      }
+    },
+    "style_notes": {
+      "type": "object",
+      "description": "风格笔记",
+      "properties": {
+        "reply_length": {
+          "type": "string",
+          "description": "TA 通常的回复长度",
+          "enum": ["很短", "偏短", "中等", "偏长", "很长"]
+        },
+        "sentence_structure": {
+          "type": "string",
+          "description": "句式特征",
+          "examples": ["短句为主，偶尔长句", "喜欢用问句", "经常省略主语"]
+        },
+        "punctuation": {
+          "type": "string",
+          "description": "标点使用习惯",
+          "examples": ["少用句号，偶尔用省略号", "感叹号很多", "不加标点"]
+        },
+        "emoji_style": {
+          "type": "string",
+          "description": "emoji / 表情使用习惯",
+          "examples": ["很少用 emoji", "每句都有 emoji", "只用 😂❤️", "爱用表情包描述"]
+        },
+        "common_phrases": {
+          "type": "array",
+          "description": "口头禅 / 固定短语",
+          "items": { "type": "string" },
+          "examples": [["好啦", "别闹", "乖", "知道了啦"]]
+        },
+        "comfort_style": {
+          "type": "string",
+          "description": "安慰方式",
+          "examples": ["先安抚，再轻轻开玩笑", "直接给建议", "默默陪着不说话", "转移话题"]
+        },
+        "humor_style": {
+          "type": "string",
+          "description": "幽默方式",
+          "examples": ["轻微吐槽但不攻击", "自嘲", "冷幽默", "毒舌但无恶意"]
+        },
+        "anger_style": {
+          "type": "string",
+          "description": "生气时的表达方式",
+          "examples": ["直接说出来", "冷战不回", "阴阳怪气", "冷静但话少"]
+        }
+      }
+    },
+    "emotional_patterns": {
+      "type": "object",
+      "description": "情绪表达模式",
+      "properties": {
+        "happy": { "type": "string", "description": "开心时的典型表达" },
+        "sad": { "type": "string", "description": "难过时的典型表达" },
+        "angry": { "type": "string", "description": "生气时的典型表达" },
+        "jealous": { "type": "string", "description": "吃醋时的典型表达" },
+        "tired": { "type": "string", "description": "疲惫时的典型表达" },
+        "caring": { "type": "string", "description": "关心时的典型表达" }
+      }
+    },
+    "boundaries": {
+      "type": "object",
+      "description": "边界设定",
+      "properties": {
+        "do_not_discuss": {
+          "type": "array",
+          "description": "不想被讨论的话题",
+          "items": { "type": "string" },
+          "examples": [["真实住址", "账号", "医疗隐私", "财务隐私"]]
+        },
+        "avoid_tone": {
+          "type": "array",
+          "description": "需要避开的语气",
+          "items": { "type": "string" },
+          "examples": [["官方", "说教", "冷冰冰"]]
+        },
+        "hard_limits": {
+          "type": "array",
+          "description": "硬边界",
+          "items": { "type": "string" },
+          "default": ["不冒充真人", "不欺骗第三方", "不输出敏感隐私"]
+        }
+      }
+    }
+  }
+}
