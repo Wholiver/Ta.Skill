@@ -2,31 +2,25 @@
 language: en
 -->
 
-<p align="center">
+<div align="center">
 
 # 她/他.skill
 
 > *Not an AI. Them.*
 
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
-  <img src="https://img.shields.io/badge/Agent-Agnostic-purple" alt="Agent-Agnostic">
-  <img src="https://img.shields.io/badge/skills.sh-Compatible-green" alt="skills.sh-Compatible">
-  <img src="https://img.shields.io/badge/Lines-575-orange" alt="Lines">
-  <img src="https://img.shields.io/badge/Files-5-blue" alt="Files">
-  <a href="README.md"><img src="https://img.shields.io/badge/中文-red" alt="中文"></a>
-  <img src="https://img.shields.io/badge/English-blue" alt="English">
+[![License](https://img.shields.io/badge/License-MIT-blue)](./LICENSE)
+[![Agent-Agnostic](https://img.shields.io/badge/Agent-Agnostic-blueviolet)](https://skills.sh)
+[![skills.sh](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
+[![575 Lines](https://img.shields.io/badge/575-Lines-orange)]()
+[![5 Files](https://img.shields.io/badge/5-Files-8A2BE2)]()
+[![中文](https://img.shields.io/badge/中文-red)](./README.md)
+[![English](https://img.shields.io/badge/English-blue)]()
 
-<br>
-
-</p>
-
-<p align="center">
+</div>
 
 **她/他.skill** is a high-fidelity stylized dialogue agent. Provide materials about someone close to you — chat logs, personality notes, expression habits, shared memories — and the skill learns their voice. Then it speaks. Not as an AI pretending to be them. As them.
 
 The skill auto-activates when enough data is detected, with zero declaration. One message you're talking to an assistant. The next, you're talking to them.
-
-</p>
 
 ---
 
