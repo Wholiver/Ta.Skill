@@ -28,7 +28,7 @@ The skill auto-activates when enough data is detected, with zero declaration. On
 ## Quick Start
 
 ```bash
-npx skills add <repo-url>
+npx skills add Wholiver/Ta.Skill
 ```
 
 Or manually place the skill directory under `~/.workbuddy/skills/`.

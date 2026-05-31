@@ -28,7 +28,7 @@ language: zh
 ## 快速开始
 
 ```bash
-npx skills add <repo-url>
+npx skills add Wholiver/Ta.Skill
 ```
 
 或手动将 skill 目录放入 `~/.workbuddy/skills/`。
