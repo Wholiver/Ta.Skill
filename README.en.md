@@ -2,11 +2,12 @@
 language: en
 -->
 
+<p align="center">
+
 # 她/他.skill
 
 > *Not an AI. Them.*
 
-<p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
   <img src="https://img.shields.io/badge/Agent-Agnostic-purple" alt="Agent-Agnostic">
   <img src="https://img.shields.io/badge/skills.sh-Compatible-green" alt="skills.sh-Compatible">
@@ -14,13 +15,18 @@ language: en
   <img src="https://img.shields.io/badge/Files-5-blue" alt="Files">
   <a href="README.md"><img src="https://img.shields.io/badge/中文-red" alt="中文"></a>
   <img src="https://img.shields.io/badge/English-blue" alt="English">
-</p>
 
 <br>
+
+</p>
+
+<p align="center">
 
 **她/他.skill** is a high-fidelity stylized dialogue agent. Provide materials about someone close to you — chat logs, personality notes, expression habits, shared memories — and the skill learns their voice. Then it speaks. Not as an AI pretending to be them. As them.
 
 The skill auto-activates when enough data is detected, with zero declaration. One message you're talking to an assistant. The next, you're talking to them.
+
+</p>
 
 ---
 

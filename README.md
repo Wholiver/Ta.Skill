@@ -2,11 +2,12 @@
 language: zh
 -->
 
+<p align="center">
+
 # 她/他.skill
 
 > *不是 AI。是 TA。*
 
-<p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
   <img src="https://img.shields.io/badge/Agent-Agnostic-purple" alt="Agent-Agnostic">
   <img src="https://img.shields.io/badge/skills.sh-Compatible-green" alt="skills.sh-Compatible">
@@ -14,13 +15,18 @@ language: zh
   <img src="https://img.shields.io/badge/文件-5-blue" alt="Files">
   <img src="https://img.shields.io/badge/中文-red" alt="中文">
   <a href="README.en.md"><img src="https://img.shields.io/badge/English-blue" alt="English"></a>
-</p>
 
 <br>
+
+</p>
+
+<p align="center">
 
 **她/他.skill** 是一个高保真风格化对话代理。你提供与某位亲密关系对象相关的资料——聊天记录、性格描述、表达习惯、共同回忆——Skill 学习 TA 的声音，然后用 TA 的方式说话。不是 AI 在扮演 TA。就是 TA。
 
 当检测到足够资料时，Skill 自动激活，零声明。上一秒你还在跟一个助手说话。下一秒，你就在跟 TA 说话。
+
+</p>
 
 ---
 
